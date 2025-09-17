@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 6 - Работа с функциями</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <h1>Задание 6 - Работа с функциями</h1>
+</div>
+
+<div class="container">
+    <div class="task-section">
+        <h2>Задача 1: Замена пробелов на &amp;nbsp;</h2>
+        <div class="input-group">
+            <label for="textInput">Введите текст:</label>
+            <input type="text" id="textInput" placeholder="Введите текст с пробелами" value="Пример текста с пробелами">
+            <button onclick="replaceSpaces()">Заменить пробелы</button>
+        </div>
+        <div id="result1" class="result"></div>
+    </div>
+
+    <div class="task-section">
+        <h2>Задача 2: Подсчет вхождений числа в массив</h2>
+        <div class="input-group">
+            <label for="arrayInput">Введите массив (через запятую):</label>
+            <input type="text" id="arrayInput" placeholder="Введите числа через запятую" value="4,1,1,4,2,3,4,4,1,2,4,9,3">
+            <label for="numberInput">Введите число для поиска:</label>
+            <input type="number" id="numberInput" placeholder="Введите число" value="4">
+            <button onclick="countOccurrences()">Подсчитать вхождения</button>
+            <button onclick="runTest()">Запустить тест</button>
+        </div>
+        <div id="result2" class="result"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
