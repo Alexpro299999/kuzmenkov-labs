@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+h1, h2 {
+    color: #333;
+}
+textarea, button {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+.result {
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.task {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-left: 4px solid #2196F3;
+    background-color: #f9f9f9;
+}
+.original {
+    background-color: #fff3e0;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.processed {
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
