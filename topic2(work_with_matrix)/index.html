@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа с матрицами</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Работа с матрицами</h1>
+
+<div class="container">
+    <h2>Ввод данных</h2>
+    <label for="matrixSize">Размерность матрицы (n):</label>
+    <input type="number" id="matrixSize" min="1" value="3">
+    <br><br>
+    <label for="matrixElements">Элементы матрицы (строки через точку с запятой, элементы через пробел):</label>
+    <textarea id="matrixElements" rows="4" cols="50" placeholder="Например: 1 2 3; 4 0 6; 7 8 0"></textarea>
+    <br><br>
+    <button onclick="processMatrix()">Обработать матрицу</button>
+    <button onclick="generateRandomMatrix()">Сгенерировать случайную матрицу</button>
+</div>
+
+<div id="results"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
