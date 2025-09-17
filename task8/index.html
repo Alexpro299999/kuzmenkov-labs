@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 8 - Типы функций JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <h1>Задание 8 - Типы функций JavaScript</h1>
+</div>
+
+<div class="container">
+    <div class="task-section">
+        <h2>Задача 1: Function Declaration Statement</h2>
+        <div class="input-group">
+            <input type="number" id="concA" placeholder="Параметр a" value="1">
+            <input type="number" id="concB" placeholder="Параметр b" value="1">
+            <button onclick="testConc()">Тестировать conc()</button>
+        </div>
+    </div>
+
+    <div class="task-section">
+        <h2>Задача 2: Function Definition Expression</h2>
+        <div class="input-group">
+            <input type="text" id="compA" placeholder="Параметр a" value="abc">
+            <input type="text" id="compB" placeholder="Параметр b" value="abc">
+            <button onclick="testComp()">Тестировать comp()</button>
+        </div>
+    </div>
+
+    <div class="task-section">
+        <h2>Задача 3: Anonymous Function</h2>
+        <button onclick="testAnonymous()">Выполнить анонимную функцию</button>
+    </div>
+
+    <div class="task-section">
+        <h2>Задача 4: Последовательность Фибоначчи</h2>
+        <div class="input-group">
+            <input type="number" id="fibInput" placeholder="Введите n" value="7">
+            <button onclick="calculateFib()">Вычислить F(n)</button>
+            <button onclick="testFib()">Тестировать fib()</button>
+        </div>
+    </div>
+
+    <div id="console" class="console"></div>
+</div>
+
+<script src="js-console.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
