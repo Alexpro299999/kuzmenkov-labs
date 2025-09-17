@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.task-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.task-section h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+#divContainer {
+    margin-bottom: 20px;
+}
+
+.div-item {
+    border: 2px solid blue;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    min-height: 40px;
+    text-align: center;
+}
+
+.nested-div {
+    border: 2px solid red;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    min-height: 30px;
+    text-align: center;
+}
+
+.selected {
+    background-color: #e8f5e9;
+    border-color: green;
+}
+
+#selectionResult {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-radius: 4px;
+    border-left: 4px solid #4CAF50;
+}
+
+#textInputResult {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-radius: 4px;
+    border-left: 4px solid #4CAF50;
+}
+
+#colorResult {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-radius: 4px;
+    border-left: 4px solid #4CAF50;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="text"], input[type="color"] {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}

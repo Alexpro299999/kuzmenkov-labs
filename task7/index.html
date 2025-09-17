@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 7 - Работа с DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <h1>Задание 7 - Работа с DOM</h1>
+</div>
+
+<div class="container">
+    <div class="task-section">
+        <h2>Задача 1: Выбор div внутри других div</h2>
+        <div id="divContainer">
+            <div class="div-item">Lonely Div</div>
+
+            <div class="div-item">
+                <div class="nested-div">Div inside another div 1</div>
+                <div class="nested-div">Div inside another div 2</div>
+            </div>
+
+            <div class="div-item">Another lonely Div</div>
+        </div>
+
+        <button onclick="selectViaQuerySelector()">Select via QuerySelector</button>
+        <button onclick="selectViaGetElementsByTagName()">Select via getElementsByTagName</button>
+        <button onclick="resetSelection()">Reset</button>
+
+        <div id="selectionResult"></div>
+    </div>
+
+    <div class="task-section">
+        <h2>Задача 2: Получение значения input text</h2>
+        <input type="text" id="textInput" placeholder="Введите текст" value="Kryusha">
+        <button onclick="logTextInput()">Поместить в консоль</button>
+        <div id="textInputResult"></div>
+    </div>
+
+    <div class="task-section">
+        <h2>Задача 3: Изменение фона по цвету</h2>
+        <input type="color" id="colorInput" value="#ff6b6b">
+        <button onclick="changeBackgroundColor()">Изменить фон</button>
+        <div id="colorResult"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
