@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа с функциями JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Работа с функциями JavaScript</h1>
+
+<div class="container">
+    <div class="task-section">
+        <h2>Задание 1: Переворот строки</h2>
+        <label for="inputString">Введите строку:</label>
+        <input type="text" id="inputString" placeholder="Введите строку для переворота" value="sample">
+        <button onclick="reverseStringDemo()">Перевернуть строку</button>
+    </div>
+
+    <div class="task-section">
+        <h2>Задание 2: Проверка скобок</h2>
+        <label for="inputExpression">Введите выражение:</label>
+        <input type="text" id="inputExpression" placeholder="Введите выражение для проверки" value="((a + b) / 5-d)">
+        <button onclick="checkBracketsDemo()">Проверить скобки</button>
+    </div>
+
+    <div class="examples">
+        <h3>Примеры для тестирования:</h3>
+        <button onclick="loadExample1()">Пример 1 (переворот)</button>
+        <button onclick="loadExample2()">Пример 2 (скобки - правильное)</button>
+        <button onclick="loadExample3()">Пример 3 (скобки - неправильное)</button>
+    </div>
+</div>
+
+<div id="results"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
