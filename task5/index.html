@@ -1,29 +1,45 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Обработка одномерных массивов</title>
-    <link rel="stylesheet" href="style.css">
+    <title>JS Arrays Homework</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="js-console.css" rel="stylesheet" />
 </head>
 <body>
-<div class="header">
-    <nav>
-        <a href="#" onclick="selectScript('ArrayX5')">01-ArrayX5</a>
-        <a href="#" onclick="selectScript('CompareCharArray')">02-CompareCharArray</a>
-        <a href="#" onclick="selectScript('MaximalSequence')">03-MaximalSequence</a>
-        <a href="#" onclick="selectScript('MaxIncreasingSequence')">04-MaxIncreasingSequence</a>
-        <a href="#" onclick="selectScript('SelectionSort')">05-SelectionSort</a>
-        <a href="#" onclick="selectScript('MostFrequent')">06-MostFrequent</a>
-        <a href="#" onclick="selectScript('BinarySearch')">07-BinarySearch</a>
-    </nav>
+<header>
+    <a href="#" id="nav-p1" onclick="showProblem(1)">01-ArrayX5</a> |
+    <a href="#" id="nav-p2" onclick="showProblem(2)">02-CompareCharArray</a> |
+    <a href="#" id="nav-p3" onclick="showProblem(3)">03-MaximalSequence</a> |
+    <a href="#" id="nav-p4" onclick="showProblem(4)">04-MostFrequentNumber</a>
+</header>
+
+<div id="problem1" class="problem-container">
+    <p>Нажмите "Execute", чтобы создать массив из 20 элементов (index * 5).</p>
+    <button onclick="runProblem1()">Execute</button>
 </div>
 
-<div class="container">
-    <div id="inputs"></div>
-    <button onclick="execute()">Execute</button>
-    <div id="console"></div>
+<div id="problem2" class="problem-container" style="display:none;">
+    <label for="p2-string1">String 1:</label>
+    <input type="text" id="p2-string1" value="hello" /> <br /><br />
+    <label for="p2-string2">String 2:</label>
+    <input type="text" id="p2-string2" value="world" /> <br /><br />
+    <button onclick="runProblem2()">Execute</button>
 </div>
+
+<div id="problem3" class="problem-container" style="display:none;">
+    <label for="p3-sequence">Sequence [,]:</label>
+    <input type="text" id="p3-sequence" value="2,1,1,2,3,3,2,2,2,1" /> <br /><br />
+    <button onclick="runProblem3()">Execute</button>
+</div>
+
+<div id="problem4" class="problem-container" style="display:none;">
+    <label for="p4-sequence">Sequence [,]:</label>
+    <input type="text" id="p4-sequence" value="4,1,1,4,2,3,4,4,1,2,4,9,3" /> <br /><br />
+    <button onclick="runProblem4()">Execute</button>
+</div>
+
+<div id="console"></div>
 
 <script src="js-console.js"></script>
 <script src="scripts.js"></script>
